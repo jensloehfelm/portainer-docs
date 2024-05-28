@@ -34,14 +34,14 @@ To update Portainer Server to the latest version, run one of the sets of command
 {% tab title="Business Edition" %}
 ```
 docker pull portainer/portainer-ee:latest
-docker service update --image portainer/portainer-ee:latest --publish-add 9443:9443 --force portainer_portainer
+docker service update --image portainer/portainer-ee:sts --publish-add 9443:9443 --force portainer_portainer
 ```
 {% endtab %}
 
 {% tab title="Community Edition" %}
 ```
 docker pull portainer/portainer-ce:latest
-docker service update --image portainer/portainer-ce:latest --publish-add 9443:9443 --force portainer_portainer
+docker service update --image portainer/portainer-ce:sts --publish-add 9443:9443 --force portainer_portainer
 ```
 {% endtab %}
 {% endtabs %}
